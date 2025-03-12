@@ -1,0 +1,7 @@
+.cardMain {
+    display: flex;
+    background-color: #4A2C14;
+    justify-content: center;   
+    align-items: center;   
+    flex-direction: row;     
+}

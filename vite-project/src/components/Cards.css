@@ -1,0 +1,96 @@
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cardMain {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+    gap: 60px; /* Keep the gap between cards */
+    justify-content: center; /* Center cards horizontally */
+    margin: 0 auto; /* Center the container */
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 30px; /* Keep padding same */
+    margin: 20px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px; /* Increased background height */
+    display: inline-block;
+    border-color: #7b4921;
+    background-color: #7b4921;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-img {
+    margin-bottom: 10px;
+    height: 80px; /* Increased size */
+    width: 80px;  /* Increased size */
+    border-radius: 50%;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease;
+    color: #FFFFFF;
+    background-color: rgba(177, 114, 63, 0.5);
+    padding: 8px; /* Slightly bigger padding */
+}
+
+.card-h1 {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px; 
+    margin-bottom: 25px;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 35PX;
+}
+
+.card-p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+    text-align: left;
+}
+
+.card:hover {
+    animation: heartbeat 1s ease 3;
+    background-color: #9f6a3f;
+}
+@media screen and (max-width: 768px) {
+    .cardMain {
+        flex-wrap: wrap; /* Wrap cards on mobile */
+    }
+    .card {
+        max-width: 100%; /* Full width on mobile */
+        min-width: 100%; /* Full width on mobile */
+    }
+    .card-img {
+        height: 60px; /* Decreased size */
+        width: 60px; /* Decreased size */
+    }
+    .card-h1 {
+        font-size: 20px; /* Decreased font size */
+    }
+    .card-p {
+        font-size: 16px; /* Decreased font size */
+    }
+    
+}

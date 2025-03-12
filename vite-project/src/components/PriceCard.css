@@ -1,0 +1,237 @@
+.price-card {
+  width: 480px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin-right: 230px;
+  margin-bottom: 150px;
+}
+
+.lowest-price-tag {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.price-section {
+  background: #fff4e5;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.sample-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  padding: 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.sample-btn {
+  background: #f60;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.variations h4 {
+  margin: 18px 0;
+  font-size: 22px;
+}
+
+.select-now {
+  font-size: 16px;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.variation-group {
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.color-options {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.color-option {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.color-option.gold {
+  background: gold;
+  border-color: #ccc;
+}
+
+.color-option.white {
+  background: white;
+  border: 2px solid #ccc;
+}
+
+.voltage-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .price-card {
+    width: 400px;
+    margin-right: 180px;
+    margin-bottom: 100px;
+  }
+
+  .price-row {
+    font-size: 18px;
+  }
+
+  .sample-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px 0;
+  }
+
+  .sample-btn {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .variations h4 {
+    font-size: 20px;
+  }
+
+  .variation-group {
+    font-size: 18px;
+  }
+
+  .color-option {
+    width: 40px;
+    height: 40px;
+  }
+
+  .voltage-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 80px;
+    padding: 15px;
+  }
+
+  .price-row {
+    font-size: 16px;
+  }
+
+  .sample-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .sample-btn {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .variations h4 {
+    font-size: 18px;
+  }
+
+  .variation-group {
+    font-size: 16px;
+  }
+
+  .color-options {
+    gap: 10px;
+  }
+
+  .color-option {
+    width: 35px;
+    height: 35px;
+  }
+
+  .voltage-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+    padding: 12px;
+  }
+
+  .price-row {
+    font-size: 14px;
+  }
+
+  .sample-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px 0;
+  }
+
+  .sample-btn {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .variations h4 {
+    font-size: 16px;
+  }
+
+  .variation-group {
+    font-size: 14px;
+  }
+
+  .color-options {
+    gap: 8px;
+  }
+
+  .color-option {
+    width: 30px;
+    height: 30px;
+  }
+
+  .voltage-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
