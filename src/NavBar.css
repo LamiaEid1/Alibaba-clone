@@ -221,18 +221,178 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
+@media (max-width: 1600px) {
+  .searchdiv {
+    transform: translateX(-10px); /* Moves it left without resizing */
+  }
+  .navbar-right {
+    gap: 30px; /* Reduce spacing */
+  }
 
-@media (max-width: 768px) {
+  .nav-links {
+    gap: 30px; /* Reduce spacing between nav items */
+  }
+
+  .nav-links li {
+    font-size: 1rem; /* Make text slightly smaller */
+  }
+
+  .deliver-to {
+    gap: 15px; /* Reduce spacing */
+  }
+
+  .deliver-to span {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .deliver-to img {
+    width: 18px;
+    height: 18px; /* Make icons smaller */
+  }
+
+  #shop-img-icon img {
+    width: 25px;
+    height: 25px; /* Reduce shop icon size */
+  }
+
+  .sign-in {
+    gap: 8px; /* Reduce spacing */
+  }
+
+  .user-icon {
+    width: 20px;
+    height: 20px; /* Make user icon smaller */
+  }
+
+  .sign-up-button {
+    padding: 8px 16px; /* Reduce button padding */
+    font-size: 12px; /* Make button text smaller */
+  }
+
+  .scroll-navbar {
+    padding: 8px 20px; /* Reduce navbar padding */
+  }
+
+  .logo {
+    height: 40px;
+    width: 120px; /* Make logo smaller */
+  }
+
+  .searchdiv {
+    width: 35%; /* Reduce search box width */
+    left: 16%; /* Move it slightly left */
+  }
+
+  #select {
+    width: 14%; /* Reduce dropdown size */
+    font-size: 0.9rem;
+  }
+
+  .main-search {
+    width: 66%; /* Adjust main search width */
+    font-size: 0.9rem;
+  }
+
+  .searchIcon {
+    width: 18%; /* Reduce search icon size */
+  }
+
+  .mobile-menu-icon {
+    width: 25px;
+    height: 25px; /* Make mobile menu icon smaller */
+  }
+
+  .mobile-menu ul li {
+    font-size: 1rem; /* Reduce mobile menu font size */
+  }
+}
+@media (max-width: 1050px) {
+  .navbar-right {
+    gap: 20px; /* Reduce spacing between nav items */
+  }
+
+  .nav-links {
+    gap: 20px; /* Reduce nav link spacing */
+  }
+
+  .nav-links li {
+    font-size: 0.9rem; /* Decrease font size */
+  }
+
+  .deliver-to {
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .deliver-to span {
+    font-size: 0.85rem; /* Make text smaller */
+  }
+
+  .deliver-to img {
+    width: 16px;
+    height: 16px; /* Make icons smaller */
+  }
+
+  #shop-img-icon img {
+    width: 22px;
+    height: 22px; /* Reduce shop icon size */
+  }
+
+  .sign-in {
+    gap: 6px; /* Reduce spacing */
+  }
+
+  .user-icon {
+    width: 18px;
+    height: 18px; /* Make user icon smaller */
+  }
+
+  .sign-up-button {
+    padding: 6px 12px; /* Reduce button padding */
+    font-size: 10px; /* Make button text smaller */
+  }
+
+  .scroll-navbar {
+    padding: 6px 15px; /* Reduce navbar padding */
+  }
+
+  .logo {
+    height: 35px;
+    width: 100px; /* Make logo smaller */
+  }
+
+
+  #select {
+    width: 12%; /* Reduce dropdown size */
+    font-size: 0.8rem;
+  }
+
+  .main-search {
+    width: 68%; /* Adjust main search width */
+    font-size: 0.8rem;
+  }
+
+  .searchIcon {
+    width: 16%; /* Reduce search icon size */
+  }
+
+  .mobile-menu-icon {
+    width: 22px;
+    height: 22px; /* Make mobile menu icon smaller */
+  }
+
+  .mobile-menu ul li {
+    font-size: 0.9rem; /* Reduce mobile menu font size */
+  }
+}
+@media (max-width: 900px) {
+.logo-img {
+  display: none;
+}
   .static-navbar, .scroll-navbar {
     padding: 10px 20px;
   }
-
   .navbar-left h1 {
     font-size: 1.5rem;
-  }
-
-  .under-logo-links {
-    display: none;
   }
 
   .deliver-to {

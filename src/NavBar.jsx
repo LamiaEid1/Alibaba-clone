@@ -5,7 +5,6 @@ import shopImage from "./assets/shopping-cart.png";
 import userImage from "./assets/user.png";
 import web from "./assets/web.png";
 import search from "./assets/211817_search_strong_icon.png";
-import category from "./assets/icons8-category-24.png";
 import menuIcon from "./assets/icons8-category-24.png";
 
 const NavBar = () => {
