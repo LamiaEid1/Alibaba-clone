@@ -275,113 +275,121 @@
 
   .logo {
     height: 40px;
-    width: 120px; /* Make logo smaller */
+    width: 120px; 
   }
 
   .searchdiv {
-    width: 35%; /* Reduce search box width */
-    left: 16%; /* Move it slightly left */
+    width: 35%; 
+    left: 16%; 
   }
 
   #select {
-    width: 14%; /* Reduce dropdown size */
-    font-size: 0.9rem;
+    height: 100%;
+    width: 20%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    text-align: center;
+    border: none;
   }
-
+  
   .main-search {
-    width: 66%; /* Adjust main search width */
+    width: 66%;
     font-size: 0.9rem;
   }
 
   .searchIcon {
-    width: 18%; /* Reduce search icon size */
+    width: 18%; 
   }
 
   .mobile-menu-icon {
     width: 25px;
-    height: 25px; /* Make mobile menu icon smaller */
+    height: 25px;
   }
 
   .mobile-menu ul li {
-    font-size: 1rem; /* Reduce mobile menu font size */
+    font-size: 1rem; 
   }
 }
 @media (max-width: 1050px) {
   .navbar-right {
-    gap: 20px; /* Reduce spacing between nav items */
+    gap: 20px; 
   }
 
   .nav-links {
-    gap: 20px; /* Reduce nav link spacing */
+    gap: 20px;
   }
 
   .nav-links li {
-    font-size: 0.9rem; /* Decrease font size */
+    font-size: 0.9rem; 
   }
 
   .deliver-to {
-    gap: 10px; /* Reduce spacing */
+    gap: 10px; 
   }
 
   .deliver-to span {
-    font-size: 0.85rem; /* Make text smaller */
+    font-size: 0.85rem; 
   }
 
   .deliver-to img {
     width: 16px;
-    height: 16px; /* Make icons smaller */
+    height: 16px; 
   }
 
   #shop-img-icon img {
     width: 22px;
-    height: 22px; /* Reduce shop icon size */
+    height: 22px; 
   }
 
   .sign-in {
-    gap: 6px; /* Reduce spacing */
+    gap: 6px; 
   }
 
   .user-icon {
     width: 18px;
-    height: 18px; /* Make user icon smaller */
+    height: 18px; 
   }
 
   .sign-up-button {
-    padding: 6px 12px; /* Reduce button padding */
-    font-size: 10px; /* Make button text smaller */
+    padding: 6px 12px; 
+    font-size: 10px; 
   }
 
   .scroll-navbar {
-    padding: 6px 15px; /* Reduce navbar padding */
+    padding: 6px 15px; 
   }
 
   .logo {
     height: 35px;
-    width: 100px; /* Make logo smaller */
+    width: 100px; 
   }
 
 
   #select {
-    width: 12%; /* Reduce dropdown size */
-    font-size: 0.8rem;
+    height: 100%;
+    width: 25%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    text-align: center;
+    border: none;
   }
 
   .main-search {
-    width: 68%; /* Adjust main search width */
+    width: 68%; 
     font-size: 0.8rem;
   }
 
   .searchIcon {
-    width: 16%; /* Reduce search icon size */
+    width: 16%; 
   }
 
   .mobile-menu-icon {
     width: 22px;
-    height: 22px; /* Make mobile menu icon smaller */
+    height: 22px; 
   }
 
   .mobile-menu ul li {
-    font-size: 0.9rem; /* Reduce mobile menu font size */
+    font-size: 0.9rem; 
   }
 }
 @media (max-width: 900px) {
