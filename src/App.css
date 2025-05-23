@@ -65,3 +65,20 @@ section {
 .read-the-docs {
   color: #888;
 }
+.element-categories {
+  color: black;
+}
+@media (max-width: 768px) {
+  .element-categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .min-and-max-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

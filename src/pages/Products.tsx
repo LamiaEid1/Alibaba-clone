@@ -38,7 +38,7 @@ const Products = () => {
             <div className="space-y-4">
               <div>
                 
-                <div className="space-y-2 " style={{'color': 'black'}}>
+                <div className=" element-categories space-y-2 ">
                   {categories.map((category) => (
                     <label key={category} className="flex items-center">
                       <input type="checkbox" className="rounded text-orange-500 mr-2" />
@@ -48,15 +48,14 @@ const Products = () => {
                 </div>
               </div>
               
-              <div>
-                <h4 className="font-medium mb-2" style={{'color': 'black'}}>Price Range</h4>
+              <div className="min-and-max-price">
+                <h4 className="font-medium mb-2 text-center md:text-left" style={{'color': 'black', 'marginBottom': '20px'}}>Price Range</h4>
                 <div className="flex items-center space-x-2">
                   <input
                     type="number"
                     placeholder="Min"
                     className="w-20 px-2 py-1 border rounded"
                   />
-                  <span>-</span>
                   <input
                     type="number"
                     placeholder="Max"
