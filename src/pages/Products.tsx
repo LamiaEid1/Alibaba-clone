@@ -31,14 +31,14 @@ const Products = () => {
         {/* Sidebar Filters */}
         <div className="w-full md:w-64 space-y-6">
           <div>
-            <h3 className="text-lg font-semibold mb-4 flex items-center">
+            <h1 className="text-lg font-semibold mb-4 flex items-center text-orange-500 font-bold" style={{'marginTop': '25px'}}>
               <AdjustmentsHorizontalIcon className="h-5 w-5 mr-2" />
               Filters
-            </h3>
+            </h1>
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium mb-2">Categories</h4>
-                <div className="space-y-2">
+                
+                <div className="space-y-2 " style={{'color': 'black'}}>
                   {categories.map((category) => (
                     <label key={category} className="flex items-center">
                       <input type="checkbox" className="rounded text-orange-500 mr-2" />
@@ -49,7 +49,7 @@ const Products = () => {
               </div>
               
               <div>
-                <h4 className="font-medium mb-2">Price Range</h4>
+                <h4 className="font-medium mb-2" style={{'color': 'black'}}>Price Range</h4>
                 <div className="flex items-center space-x-2">
                   <input
                     type="number"
@@ -89,7 +89,7 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{'marginBottom': '25px'}}>
             {products.map((product) => (
               <Link
                 key={product.id}
