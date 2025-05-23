@@ -23,9 +23,9 @@ const ProductDetail = () => {
       'Touch controls',
     ],
     images: [
-      'https://via.placeholder.com/600x400',
-      'https://via.placeholder.com/600x400',
-      'https://via.placeholder.com/600x400',
+      'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png',
+      'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png',
+      'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png',
     ],
     seller: {
       name: 'Tech Gadgets Store',
@@ -95,27 +95,25 @@ const ProductDetail = () => {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center space-x-4">
-              <label className="font-medium">Quantity:</label>
-              <input
-                type="number"
-                min="1"
-                value={quantity}
-                onChange={handleQuantityChange}
-                className="w-20 px-3 py-2 border rounded-lg"
-              />
-            </div>
+          <div className="flex items-center space-x-4">
+            <label className="font-medium">Quantity:</label>
+            <input
+              type="number"
+              min="1"
+              value={quantity}
+              onChange={handleQuantityChange}
+              className="w-20 px-3 py-2 border rounded-lg"
+            />
+          </div>
 
-            <div className="flex space-x-4">
-              <button className="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 flex items-center justify-center">
-                <ShoppingCartIcon className="h-5 w-5 mr-2" />
-                Add to Cart
-              </button>
-              <button className="flex-1 border border-orange-500 text-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50">
-                Buy Now
-              </button>
-            </div>
+          <div className="flex space-x-4">
+            <button className="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 flex items-center justify-center">
+              <ShoppingCartIcon className="h-5 w-5 mr-2" />
+              Add to Cart
+            </button>
+            <button className="flex-1 border border-orange-500 text-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50">
+              Buy Now
+            </button>
           </div>
 
           <div className="border-t pt-6 space-y-4">
