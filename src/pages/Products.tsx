@@ -6,12 +6,12 @@ const Products = () => {
   const [sortBy, setSortBy] = useState('popular');
   
   const products = [
-    { id: 1, name: 'Wireless Earbuds', price: 29.99, rating: 4.5, sales: 1200, image: 'https://via.placeholder.com/300x300' },
-    { id: 2, name: 'Smart Watch', price: 99.99, rating: 4.3, sales: 800, image: 'https://via.placeholder.com/300x300' },
-    { id: 3, name: 'Laptop Stand', price: 24.99, rating: 4.7, sales: 2000, image: 'https://via.placeholder.com/300x300' },
-    { id: 4, name: 'Phone Case', price: 14.99, rating: 4.2, sales: 3000, image: 'https://via.placeholder.com/300x300' },
-    { id: 5, name: 'Bluetooth Speaker', price: 49.99, rating: 4.6, sales: 1500, image: 'https://via.placeholder.com/300x300' },
-    { id: 6, name: 'Wireless Mouse', price: 19.99, rating: 4.4, sales: 2500, image: 'https://via.placeholder.com/300x300' },
+    { id: 1, name: 'Wireless Earbuds', price: 29.99, rating: 4.5, sales: 1200, image: 'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png' },
+    { id: 2, name: 'Smart Watch', price: 99.99, rating: 4.3, sales: 800, image: 'https://img.fruugo.com/product/3/45/203344453_max.jpg' },
+    { id: 3, name: 'Laptop Stand', price: 24.99, rating: 4.7, sales: 2000, image: 'https://www.ubuy.com.lb/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNDEwRzZzVkZPSUwuX1NTNDAwXy5qcGc.jpg' },
+    { id: 4, name: 'Phone Case', price: 14.99, rating: 4.2, sales: 3000, image: 'https://acaso.uk/cdn/shop/files/bbaab50b-fcfd-4c39-a797-e969202b6811.jpg?v=1727208539' },
+    { id: 5, name: 'Bluetooth Speaker', price: 49.99, rating: 4.6, sales: 1500, image: 'https://www.sencor.com/getmedia/6770caad-d0be-4d0d-b5f0-01bbc4c1c555/35059169.jpg.aspx?width=2100&height=2100&ext=.jpg' },
+    { id: 6, name: 'Wireless Mouse', price: 19.99, rating: 4.4, sales: 2500, image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/PV/EV/WE/117485675/seenda-wireless-silent-mouse-with-usb-nano-receiver-1600-dpi-ambidextrous-pc-mac-laptop-black-500x500.jpg' },
   ];
 
   const categories = [
@@ -96,7 +96,13 @@ const Products = () => {
                 to={`/products/${product.id}`}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
+                <div className="h-64 p-4 flex items-center justify-center bg-white">
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="max-h-full w-auto object-contain" 
+                  />
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
                   <p className="text-orange-500 font-bold mb-2">${product.price}</p>
