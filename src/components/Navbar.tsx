@@ -1,18 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import  { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon, XMarkIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const showBackButton = location.pathname !== '/';
 
   return (
     <nav className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="text-xl sm:text-2xl font-bold text-orange-500 flex-shrink-0">
-            Alibaba Clone
-          </Link>
+          {/* Logo with Back Button */}
+          <div className="flex items-center">
+            {showBackButton && (
+              <button
+                onClick={() => navigate(-1)}
+                className="back-button mr-2 p-1 text-gray-600 hover:text-orange-500 transition-colors"
+                aria-label="Go back"
+              >
+                <ChevronLeftIcon className="h-6 w-6" />
+              </button>
+            )}
+            <Link to="/" className="text-xl sm:text-2xl font-bold text-orange-500 flex-shrink-0">
+              Alibaba Clone
+            </Link>
+          </div>
 
           {/* Mobile menu button */}
           <div className="flex md:hidden">
@@ -58,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} py-4`}>
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-4">
             <div className="relative mb-4">
               <input
